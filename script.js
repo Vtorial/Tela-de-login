@@ -43,3 +43,22 @@ function verificarLogin(email, senha) {
   
   return true;
 }
+
+document.querySelector('form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const email = document.querySelector('input[type="email"]').value;
+  const password = document.querySelector('input[type="password"]').value;
+  
+  if (!email || !password) {
+    alert('Por favor, preencha todos os campos!');
+    return;
+  }
+  
+  if (password.length < 6) {
+    alert('A senha deve ter pelo menos 6 caracteres!');
+    return;
+  }
+
+  alert('Login realizado com sucesso!');
+});

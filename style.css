@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins' sanf-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-itens: center;
+  min-height: 100vh;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-position: center;
+}
+
+.container {
+  width: 400px;
+  border: 2px solid rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+}
+
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #724f9c;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  /*pega quanto espaço conseguir*/
+  height: 20px;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 90%;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 2px solid #ccc;
+  color: #555;
+  padding: 10px 30px 10px 10px;
+  border-radius: 50px;
+}
+
+/*.remember-forgot{
+  justify-content: space-between;
+  display: flex;
+}*/
+
+.remember-forgot {
+  accent-color: #00ff00;
+}
+
+.remember-forgot a {
+  color: #724f9c;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+  /*o mouse muda*/
+}
+
+.entrar {
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  color: #724f9c;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.entrar :hover {
+  background-color: #724f9c;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.registre-se {
+  font-size: 14px;
+  text-align: center;
+}
+
+,
+registre-se-link a:hover {
+  text-decoration: underline;
+}

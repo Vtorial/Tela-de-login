@@ -10,8 +10,16 @@ document.querySelector('form').addEventListener('submit', function(e) {
     return false;
   }
   
+  const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+  const usuarioExiste = usuarios.some(u => u.email === email);
+  
+  if (!usuarioExiste) {
+    alert('Email não cadastrado. Por favor, registre-se primeiro.');
+    return false;
+  }
+  
   if (!verificarUsuario(email, password)) {
-    alert('Usuário ou senha incorretos!');
+    alert('Senha incorreta!');
     return false;
   }
   
@@ -35,3 +43,4 @@ document.querySelector('a[href="#"]').addEventListener('click', function(e) {
 
   alert('Um email de recuperação foi enviado para: ' + email);
 });
+

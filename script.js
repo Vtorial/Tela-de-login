@@ -1,6 +1,6 @@
 document.querySelector('form').addEventListener('submit', function(e) {
   e.preventDefault(); 
-  /*Quando o formulário é enviado, esta função é executada, e o comportamento padrão é cancelado*/
+    /*Quando o formulário é enviado, esta função é executada, e o comportamento padrão é cancelado*/
 
   const email = document.querySelector('input[type="email"]').value;
   const password = document.querySelector('input[type="password"]').value;
@@ -43,4 +43,5 @@ document.querySelector('a[href="#"]').addEventListener('click', function(e) {
 
   alert('Um email de recuperação foi enviado para: ' + email);
 });
+
 

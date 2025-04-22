@@ -1,4 +1,5 @@
 
+
 // Adiciona evento de submit ao formulário de registro
 document.getElementById('registerForm').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -40,6 +41,6 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
   localStorage.setItem('usuarios', JSON.stringify(usuarios));
   
   // Mostrar mensagem de sucesso e redirecionar
-  alert('Registro realizado com sucesso!');
+  alert('Registro realizado com sucesso!Seu cadastro foi concluído. Agora você pode fazer login com seu email e senha.');
   window.location.href = 'index.html';
 });
